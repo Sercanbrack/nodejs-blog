@@ -15,9 +15,10 @@
             <h1>
                 <a href="/">WebDev Blog</a>
             </h1>
-            <nav>
+            <nav class="u-full-width" id="navigation">
                 {{#if logged_in}}
-                <a class="button-primary" href="/dashboard">Dashboard</a>
+                <button class="button button-primary" href="/dashboard" id="dashButton">Dashboard</a>
+                <button class="button button-primary" href="/homepage" id="homeButton">Home</button>
                 <button class="logout button" id="logout">Log Out</button>
                 {{/if}}
             </nav>
@@ -31,6 +32,7 @@
     </div>
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
+    <script src="/js/main.js"></script>
     {{/if}}
 </body>
 </html>

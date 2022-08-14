@@ -1,22 +1,18 @@
 [
     {
         "title": "My first post!",
-        "content": "This is my very first post! Look at me go!",
-        "date_created": "08/14/2022"
+        "content": "This is my very first post! Look at me go!"
     },
     {
         "title": "This is a post",
-        "content": "Wow, this is certainly a post!",
-        "date_created": "04/20/1969"
+        "content": "Wow, this is certainly a post!"
     },
     {
         "title": "According to all known laws of aviation...",
-        "content": "...there is no way a bee should be able to fly.",
-        "date_created": "11/02/2007"
+        "content": "...there is no way a bee should be able to fly."
     },
     {
         "title": "TITLE",
-        "content": "CONTENT",
-        "date_created": "01/01/1900"
+        "content": "CONTENT"
     }
 ]

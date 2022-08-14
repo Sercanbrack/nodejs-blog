@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="u-full-width">
-        <h2>{{title}}</h2>
-        <p>{{content}}</p>
-        <p>posted {{format_date post.createdAt}} by {{user.username}}</p>
+    <div class="u-full-width"  id="fullPost">
+        <h2 style="text-decoration:underline">{{title}}</h2>
+        <p id="postContent">{{content}}</p>
+        <p>-posted {{format_date date_created}} by {{user.username}}</p>
     </div>
     {{#if comments.length}}
     <div class="u-full-width">
@@ -17,5 +17,7 @@
                 {{comment.content}}
             </p>
         </div>
+        {{/each}}
     </div>
+    {{/if}}
 </div>

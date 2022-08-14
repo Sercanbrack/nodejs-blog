@@ -1,0 +1,22 @@
+#navigation {
+    display: flex;
+}
+
+.button, button {
+    margin: 10px;
+}
+
+#newPost, #dashPost, #homePost, #postContent, #fullPost {
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#dashPost, #homePost {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#titleCard {
+    border-right: 2px solid gray;
+}

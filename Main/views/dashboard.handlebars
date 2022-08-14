@@ -5,7 +5,7 @@
 </div>
 
 <div class="row">
-    <div class="six columns">
+    <div class="six columns" id="newPost">
         <h3>Create a post:</h3>
         <form class="form new-post-form">
             <label for="post-title">Title</label>
@@ -17,16 +17,16 @@
     </div>
 
     {{#if posts.length}}
-    <div class="six columns">
-        <h3>Your Posts:</h3>
+    <div class="six columns" id="yourPosts">
+        <h3>Your posts:</h3>
 
         {{#each posts as |post|}}
-        <div class="row project-list">
+        <div class="row" id="dashPost">
             <div class="eight columns">
                 <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
             </div>
             <div class="four columns">
-                <button class="button-delete" data-id="{{post.id}}">DELETE</button>
+                <button class="button-delete project-list" data-id="{{post.id}}">DELETE</button>
             </div>
         </div>
         {{/each}}
