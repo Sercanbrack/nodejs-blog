@@ -3,12 +3,11 @@ const newFormHandler = async (event) => {
 
     const title = document.getElementById('post-title').value.trim()
     const content = document.getElementById('post-content').value.trim()
-    const dateCreated = document.getElementById('post-date').value.trim()
 
-    if(title && content && dateCreated) {
+    if(title && content) {
         const response = await fetch(`api/posts`, {
             method: 'POST',
-            body: JSON.stringify({ title, content, dateCreated }),
+            body: JSON.stringify({ title, content }),
             headers: {
                 'Content-Type': 'application/json',
             },

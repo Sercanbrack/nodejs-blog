@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="u-full-width">
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+        <p>posted {{format_date post.createdAt}} by {{user.username}}</p>
+    </div>
+    {{#if comments.length}}
+    <div class="u-full-width">
+        <h3>Comments</h3>
+        {{#each comments as |comment|}}
+        <div class="three columns">
+            <p>{{comment.user.username}}</p>
+            <p>{{comment.date_created}}</p>
+        </div>
+        <div class="nine columns">
+            <p>
+                {{comment.content}}
+            </p>
+        </div>
+    </div>
+</div>
