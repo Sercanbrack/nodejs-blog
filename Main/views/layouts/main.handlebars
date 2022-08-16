@@ -13,13 +13,14 @@
     <div>
         <header>
             <h1>
-                <a href="/">WebDev Blog</a>
+                <a href="/" id="titleEl">WebDev Blog</a>
             </h1>
             <nav class="u-full-width" id="navigation">
                 {{#if logged_in}}
                 <button class="button button-primary" href="/dashboard" id="dashButton">Dashboard</a>
-                <button class="button button-primary" href="/homepage" id="homeButton">Home</button>
                 <button class="logout button" id="logout">Log Out</button>
+                {{else}}
+                <a href="/login" class="button button-primary">Log In/Sign Up</a>
                 {{/if}}
             </nav>
         </header>

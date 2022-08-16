@@ -1,3 +1,24 @@
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+#titleEl{
+    margin: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border-right: 5px solid #0FA0CE;
+    border-bottom: 5px solid #0FA0CE;
+    border-bottom-right-radius: 10px;
+}
+
 #navigation {
     display: flex;
 }
@@ -6,10 +27,22 @@
     margin: 10px;
 }
 
+#commentButton {
+    margin: 0px;
+    margin-left: 5px;
+    display: flex;
+}
+
+.button-delete {
+    display: flex;
+}
+
 #newPost, #dashPost, #homePost, #postContent, #fullPost {
     border: 2px solid silver;
     border-radius: 5px;
     padding: 8px;
+    background-color: white;
+
 }
 
 #dashPost, #homePost {
@@ -19,4 +52,8 @@
 
 #titleCard {
     border-right: 2px solid gray;
+}
+
+#commentEl {
+    border-top: 2px solid gray;
 }

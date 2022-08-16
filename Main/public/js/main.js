@@ -3,10 +3,10 @@ const dashboardHandler = async (event) => {
     document.location.replace('/dashboard')
 }
 
-const homepageHandler = async (event) => {
+const loginHandler = async (event) => {
     event.preventDefault()
-    document.location.replace('/')
+    document.location.replace('/login')
+    console.log('clicked!')
 }
 
 document.getElementById('dashButton').addEventListener('click', dashboardHandler)
-document.getElementById('homeButton').addEventListener('click', homepageHandler)
