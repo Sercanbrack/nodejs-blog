@@ -1,15 +1,19 @@
-{{#each posts as |post| }}
-<div class="row" id="homePost">
+{{#each posts as |post|}}
+  <div class="row" id="homePost">
     <div class="four columns" id="titleCard">
-        <h2>
-            <a href="/post/{{post.id}}">{{post.title}}</a>
-        </h2>
-        <p>-posted {{format_date post.date_created}} by {{post.user.username}} </p>
+      <h2>
+        <a href="/post/{{post.id}}">{{post.title}}</a>
+      </h2>
+      <p>-posted
+        {{format_date post.date_created}}
+        by
+        {{post.user.username}}
+      </p>
     </div>
     <div class="eight columns">
-        <p>
-            {{post.content}}
-        </p>
+      <p>
+        {{post.content}}
+      </p>
     </div>
-</div>
+  </div>
 {{/each}}

@@ -1,37 +1,46 @@
 <div class="row">
-    <div class="twelve columns">
-        <h2>Welcome, {{username}}!</h2>
-    </div>
+  <div class="twelve columns">
+    <h2>Welcome, {{username}}!</h2>
+  </div>
 </div>
 
 <div class="row">
-    <div class="six columns" id="newPost">
-        <h3>Create a post:</h3>
-        <form class="form new-post-form">
-            <label for="post-title">Title</label>
-            <input class="u-full-width" type="text" id="post-title" name="post-title">
-            <label for="post-content">What's on your mind?</label>
-            <textarea class="u-full-width" type="text" id="post-content"></textarea>
-            <button type="submit" value="Submit" class="button button-primary">Post</button>
-        </form>
-    </div>
+  <div class="six columns" id="newPost">
+    <h3>Create a post:</h3>
+    <form class="form new-post-form">
+      <label for="post-title">Title</label>
+      <input
+        class="u-full-width"
+        type="text"
+        id="post-title"
+        name="post-title"
+      />
+      <label for="post-content">What's on your mind?</label>
+      <textarea class="u-full-width" type="text" id="post-content"></textarea>
+      <button
+        type="submit"
+        value="Submit"
+        class="button button-primary"
+      >Post</button>
+    </form>
+  </div>
 
-    {{#if posts.length}}
+  {{#if posts.length}}
     <div class="six columns" id="yourPosts">
-        <h3>Your posts:</h3>
+      <h3>Your posts:</h3>
 
-        {{#each posts as |post|}}
+      {{#each posts as |post|}}
         <div class="row" id="dashPost">
-            <div class="eight columns">
-                <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
-            </div>
-            <div class="four columns">
-                <button class="button-delete" data-id="{{post.id}}">DELETE</button>
-            </div>
+          <div class="eight columns">
+            <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+          </div>
+          <div class="four columns">
+            <button class="button-delete" data-id="{{post.id}}">DELETE</button>
+          </div>
         </div>
-        {{/each}}
+      {{/each}}
     </div>
-    {{/if}}
+  {{/if}}
 </div>
 
 <script src="./js/dashboard.js"></script>

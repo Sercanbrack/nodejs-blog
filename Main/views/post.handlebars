@@ -1,30 +1,40 @@
 <div class="row" id="fullPost">
-    <div class="u-full-width">
-        <h2 style="color:#1EAEDB">{{title}}</h2>
-        <p id="postContent">{{content}}</p>
-        <p>-posted {{format_date date_created}} by {{user.username}}</p>
-    </div>
-    <form class="u-full-width" id="commentEl">
-        <h3>Comments</h3>
+  <div class="u-full-width">
+    <h2 style="color:#1EAEDB">{{title}}</h2>
+    <p id="postContent">{{content}}</p>
+    <p>-posted {{format_date date_created}} by {{user.username}}</p>
+  </div>
+  <form class="u-full-width" id="commentEl">
+    <h3>Comments</h3>
     {{#if comments.length}}
-        {{#each comments as |comment|}}
+      {{#each comments as |comment|}}
         <div>
-        <div class="three columns">
+          <div class="three columns">
             <p id="commentUser">{{comment.user.username}}</p>
             <p id="">{{comment.date_created}}</p>
-        </div>
-        <div class="nine columns">
+          </div>
+          <div class="nine columns">
             <p>
-                {{comment.content}}
+              {{comment.content}}
             </p>
+          </div>
+          <button class="button-delete" data-id="{{comment.id}}">DELETE</button>
         </div>
-        <button class='button-delete' data-id="{{comment.id}}">DELETE</button>
-        </div>
-        {{/each}}
+      {{/each}}
     {{/if}}
-        <textarea class="u-full-width" type="text" id="commentText" placeholder="Leave a comment"></textarea>
-        <button class="button button-primary" id="commentButton" type="submit" value="Submit">Submit</button>
-    </form>
+    <textarea
+      class="u-full-width"
+      type="text"
+      id="commentText"
+      placeholder="Leave a comment"
+    ></textarea>
+    <button
+      class="button button-primary"
+      id="commentButton"
+      type="submit"
+      value="Submit"
+    >Submit</button>
+  </form>
 </div>
 
-<script src="/Main/public/js/post.js"></script>
+<script src='Main\public\js\post.js'></script>
