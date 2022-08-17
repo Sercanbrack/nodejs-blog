@@ -1,17 +1,17 @@
 [
     {
-        "username": "test",
-        "email": "test@test.com",
-        "password": "test12345"
+        "username": "Cayde-6",
+        "email": "cayde@vanguard.org",
+        "password": "aceofspades"
     },
     {
-        "username": "test2",
-        "email": "test2@test.com",
-        "password": "test12345"
+        "username": "newdeveloper113",
+        "email": "mpgkezk@gmail.com",
+        "password": "aaaaaaaa"
     },
     {
-        "username": "test3",
-        "email": "test3@test.com",
-        "password": "test12345"
+        "username": "ERI-223",
+        "email": "morn-eris@vanguard.org",
+        "password": "anewwitch"
     }
 ]

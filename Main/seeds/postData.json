@@ -4,8 +4,8 @@
         "content": "This is my very first post! Look at me go!"
     },
     {
-        "title": "This is a post",
-        "content": "Wow, this is certainly a post!"
+        "title": "Having trouble with javascript...",
+        "content": "You really think we'd have made a new programming language after the collapse, right?"
     },
     {
         "title": "According to all known laws of aviation...",
@@ -14,5 +14,9 @@
     {
         "title": "TITLE",
         "content": "CONTENT"
+    },
+    {
+        "title": "Why would I use MySQL over MongoDB?",
+        "content": "Relational databases seemed nice at first, but they get so complex so quickly..."
     }
 ]
